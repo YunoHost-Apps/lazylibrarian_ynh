@@ -20,7 +20,7 @@ code = "https://gitlab.com/LazyLibrarian/LazyLibrarian"
 yunohost = ">= 12.1.39"
 helpers_version = "2.1"
 architectures = "all"
-multi_instance = true
+multi_instance = false
 
 ldap = false
 sso = false
