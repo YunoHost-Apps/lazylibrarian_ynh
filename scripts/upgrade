@@ -23,9 +23,9 @@ ynh_setup_source --dest_dir="$install_dir" --full_replace
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-ynh_script_progression "Updating $app's configuration files..."
+#ynh_script_progression "Updating $app's configuration files..."
 
-ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
+#ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATION
@@ -36,7 +36,20 @@ ynh_config_add_nginx
 
 ynh_config_add_systemd
 
-yunohost service add "$app" --description="A short description of the app" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Follow authors and grab metadata" --log="/var/log/$app/$app.log"
+
+#=================================================
+# INSTALL PYTHON DEPENDENCIES
+#=================================================
+ynh_script_progression "Installing Python dependencies..."
+
+pushd $install_dir
+    python3 -m venv $install_dir/venv
+    ynh_hide_warnings $install_dir/venv/bin/pip install --upgrade pip
+    ynh_hide_warnings $install_dir/venv/bin/pip install .
+popd
+
+chown -R $app:$app "$install_dir"
 
 #=================================================
 # START SYSTEMD SERVICE

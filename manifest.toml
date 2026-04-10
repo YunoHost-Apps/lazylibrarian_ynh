@@ -5,7 +5,7 @@ packaging_format = 2
 id = "lazylibrarian"
 name = "LazyLibrarian"
 description.en = "Follow authors and grab metadata for all your digital reading needs"
-description.fr = "Follow authors and grab metadata for all your digital reading needs"
+description.fr = "Suivez vos auteurs préférés et récupérez les métadonnées pour tous vos besoins en matière de lecture numérique"
 
 version = "1.0~ynh1"
 
@@ -20,7 +20,7 @@ code = "https://gitlab.com/LazyLibrarian/LazyLibrarian"
 yunohost = ">= 12.1.39"
 helpers_version = "2.1"
 architectures = "all"
-multi_instance = true
+multi_instance = false
 
 ldap = false
 sso = false

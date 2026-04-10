@@ -19,7 +19,7 @@ Follow authors and grab metadata for all your digital reading needs
 
 
 ## Screenshots
-![Screenshot of LazyLibrarian](./doc/screenshots/example.jpg)
+![Screenshot of LazyLibrarian](./doc/screenshots/screenshot.png)
 
 ## 📦 Developer info
 
