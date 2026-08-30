@@ -7,7 +7,7 @@ name = "LazyLibrarian"
 description.en = "Follow authors and grab metadata for all your digital reading needs"
 description.fr = "Suivez vos auteurs préférés et récupérez les métadonnées pour tous vos besoins en matière de lecture numérique"
 
-version = "2026.08.13~ynh1"
+version = "2026.08.30~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -42,8 +42,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://gitlab.com/LazyLibrarian/LazyLibrarian/-/archive/02af04640b3dd91c4b319e893a8ac15f71d74f34/LazyLibrarian-02af04640b3dd91c4b319e893a8ac15f71d74f34.tar.bz2"
-    sha256 = "1ca1d15b547f2a711ba78fbf5076f0bc5c9c6b2e46b64c6f53f2bdaa8be653c8"
+    url = "https://gitlab.com/LazyLibrarian/LazyLibrarian/-/archive/375450514f1c8967323ca10638893db29aa8a840/LazyLibrarian-375450514f1c8967323ca10638893db29aa8a840.tar.bz2"
+    sha256 = "73e0e592b75458e7c188e66567ed3b8a5623037076bc09e3cdd4a60b0c109c13"
 
     autoupdate.strategy = "latest_gitlab_commit"
 
